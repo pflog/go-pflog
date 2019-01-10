@@ -1,5 +1,7 @@
 # High Performance Logger For Human And Machine
 
+[![Build Status](https://travis-ci.org/pflog/go.svg?branch=master)](https://travis-ci.org/pflog/go)
+
 Log formats are commonly designed for either humans or machines. Pflog
 provides a log format (called *pformat*) that is easy to encode, easy
 to read and easy to parse.
