@@ -37,7 +37,7 @@ func BenchmarkLogger_GlogWithInfo(b *testing.B) {
 
 func BenchmarkLogger_Info(b *testing.B) {
 	l := logger{
-		encoder: text.Encode,
+		encoder: text.NewEncoder(),
 		output:  noopWriter{},
 	}
 
@@ -50,7 +50,7 @@ func BenchmarkLogger_Info(b *testing.B) {
 
 func BenchmarkLogger_WithInfo(b *testing.B) {
 	l := logger{
-		encoder: text.Encode,
+		encoder: text.NewEncoder(),
 		output:  noopWriter{},
 	}
 
@@ -66,7 +66,7 @@ func BenchmarkLogger_WithInfo(b *testing.B) {
 
 func BenchmarkLogger_WithInfo_PureStruct(b *testing.B) {
 	l := logger{
-		encoder: text.Encode,
+		encoder: text.NewEncoder(),
 		output:  noopWriter{},
 	}
 
@@ -82,7 +82,7 @@ func BenchmarkLogger_WithInfo_PureStruct(b *testing.B) {
 
 func BenchmarkLogger_WithInfo_Prealloc(b *testing.B) {
 	l := logger{
-		encoder: text.Encode,
+		encoder: text.NewEncoder(),
 		output:  noopWriter{},
 	}
 
@@ -99,7 +99,7 @@ func BenchmarkLogger_WithInfo_Prealloc(b *testing.B) {
 
 func BenchmarkLogger_WithInfo_PreparedLogger(b *testing.B) {
 	l := logger{
-		encoder: text.Encode,
+		encoder: text.NewEncoder(),
 		output:  noopWriter{},
 	}
 
