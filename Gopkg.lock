@@ -11,11 +11,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1cd3aa9b8714afe04cbec09df7b4925ed580b57b8354d9a91964dd744e7912fe"
+  digest = "1:035c2dd7b4620b4f766650c214496b714a7bac0b28c5fc6553adc47945c8b752"
   name = "github.com/mrcrgl/bytesf"
   packages = ["."]
   pruneopts = "UT"
-  revision = "2367cbcdb1af68a91f5653420158907f6eca611d"
+  revision = "afb18f806d31789489b46f32d91d35467327feef"
 
 [[projects]]
   digest = "1:c3f1437b1d47d04ed6b3b4076b4cb4a33957723986054e7c2b9876772fffeb25"

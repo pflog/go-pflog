@@ -5,6 +5,11 @@ import (
 	"sync"
 )
 
+type BufferPool interface {
+	Allocate() *bytes.Buffer
+	Release(*bytes.Buffer)
+}
+
 func NewBufferPool(size, maxSize int) *bufferPool {
 	return &bufferPool{
 		size:    size,
@@ -21,7 +26,7 @@ type bufferPool struct {
 	slotB   *bytes.Buffer
 }
 
-func (b *bufferPool) GetBuffer() *bytes.Buffer {
+func (b *bufferPool) Allocate() *bytes.Buffer {
 	b.mu.Lock()
 	c := b.slotA
 	if c != nil {
@@ -38,7 +43,7 @@ func (b *bufferPool) GetBuffer() *bytes.Buffer {
 	return c
 }
 
-func (b *bufferPool) PutBuffer(c *bytes.Buffer) {
+func (b *bufferPool) Release(c *bytes.Buffer) {
 	if c.Len() >= b.maxSize {
 		return
 	}
