@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/pflog/go/log"
+	"github.com/pflog/go-pflog/log"
 
-	"github.com/pflog/go/container"
+	"github.com/pflog/go-pflog/container"
 )
 
 func main() {

@@ -3,13 +3,13 @@ package log
 import (
 	"os"
 
-	"github.com/pflog/go/pkg/logging"
+	"github.com/pflog/go-pflog/pkg/logging"
 
-	"github.com/pflog/go/container"
+	"github.com/pflog/go-pflog/container"
 
-	"github.com/pflog/go"
-	"github.com/pflog/go/pkg/encoding/text"
-	"github.com/pflog/go/pkg/logger"
+	"github.com/pflog/go-pflog"
+	"github.com/pflog/go-pflog/pkg/encoding/text"
+	"github.com/pflog/go-pflog/pkg/logger"
 )
 
 func init() {

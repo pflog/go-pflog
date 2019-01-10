@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/pflog/go/pkg/logging"
+	"github.com/pflog/go-pflog/pkg/logging"
 )
 
 var ErrNotRegistered = errors.New("ErrNotRegistered")
