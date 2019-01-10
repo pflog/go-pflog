@@ -3,9 +3,9 @@ package logger
 import (
 	"testing"
 
-	"github.com/mrcrgl/pflog/pkg/encoding/text"
+	"github.com/pflog/go/pkg/encoding/text"
 
-	"github.com/mrcrgl/pflog/container"
+	"github.com/pflog/go/container"
 	uuid "github.com/satori/go.uuid"
 
 	"github.com/golang/glog"

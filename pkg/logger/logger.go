@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/mrcrgl/pflog/pkg/logging"
+	"github.com/pflog/go/pkg/logging"
 
-	"github.com/mrcrgl/pflog/container"
+	"github.com/pflog/go/container"
 )
 
 func New(encoder logging.Encoder, output io.Writer) *logger {

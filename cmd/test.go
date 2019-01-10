@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/mrcrgl/pflog/log"
+	"github.com/pflog/go/log"
 
-	"github.com/mrcrgl/pflog/container"
+	"github.com/pflog/go/container"
 )
 
 func main() {
@@ -17,7 +17,7 @@ a multiline message.
 
 Yeah.`)
 		log.Info("Hallo")
-		log.Infof("Hallo %s! Es ist %d Stunde nach 12", "Heinz", 12)
+		log.Infof("Hallo %s! Es ist %d Stunden nach 12", "Heinz", 12)
 
 		time.Sleep(time.Second)
 	}
