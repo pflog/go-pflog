@@ -5,6 +5,9 @@ go:
   - "1.8"
   - "1.10.x"
 
+# Skip go get since the code is vendored.
+install: true
+
 script:
   - go tool vet -all .
   - go test -v ./...
