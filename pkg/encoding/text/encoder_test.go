@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mrcrgl/pflog/container"
-	"github.com/mrcrgl/pflog/pkg/logging"
+	"github.com/pflog/go/container"
+	"github.com/pflog/go/pkg/logging"
 )
 
 func BenchmarkEncode(b *testing.B) {

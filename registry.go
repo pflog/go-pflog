@@ -1,7 +1,7 @@
 package pflog
 
 import (
-	"github.com/mrcrgl/pflog/pkg/registry"
+	"github.com/pflog/go/pkg/registry"
 )
 
 var Register = registry.NewBucket()

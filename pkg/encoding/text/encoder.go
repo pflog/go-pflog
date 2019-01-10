@@ -3,7 +3,7 @@ package text
 import (
 	"bytes"
 
-	"github.com/mrcrgl/pflog/pkg/logging"
+	"github.com/pflog/go/pkg/logging"
 
 	"github.com/mrcrgl/bytesf"
 	"github.com/mrcrgl/timef"

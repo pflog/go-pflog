@@ -1,6 +1,6 @@
 package logger
 
-import "github.com/mrcrgl/pflog/pkg/logging"
+import "github.com/pflog/go/pkg/logging"
 
 var _ logging.Logger = &noopLogger{}
 
